@@ -1,0 +1,23 @@
+{
+	"last-updated": "2023-05-08T00:00:00.000Z",
+	"title": "Apple",
+	"components": [
+		{
+			"title": "iPhone 14 Pro",
+			"text": [
+				"Pro. Beyond."
+			],
+			"links": [
+				{
+					"label": "Learn more",
+					"uri": "/learn_more/iphone_14_pro"
+				},
+				{
+					"label": "Buy",
+					"uri": "/buy/iphone_14_pro"
+				}
+			],
+			"design": "feature"
+		}
+	]
+}

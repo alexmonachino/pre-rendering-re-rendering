@@ -1,0 +1,26 @@
+---
+// components
+import Feature from '../components/Feature/Feature.jsx';
+// utilities
+import { content } from '../utilities/content';
+// set alias, for fetching this page's content
+const alias = 'index';
+// fetch data
+const data = await content(alias);
+---
+<!doctype html>
+<html lang='en-US'>
+  <head>
+    <meta charset='utf-8'>
+    <title>{data.title}</title>
+  </head>
+  <body>
+    {/* for each component... */}
+    {data.components.map((component, index) => {
+      {/* 'feature' design */}
+      if (component.design === 'feature')
+        return <Feature compileTime={data} alias={alias} index={index} client:load />;
+      {/* ... */}
+    })}
+  </body>
+</html>
